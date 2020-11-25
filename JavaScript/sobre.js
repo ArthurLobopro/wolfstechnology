@@ -9,7 +9,7 @@ function sobre(){
             <li class="botao" onclick="contatos()">Contatos</li>
         </ul>
     </header>
-    <img src="../midia/black-wolf-logo.png" id="img" alt="Logo" >
+    <img src="../midia/tech-logo.png" id="img" alt="Logo" >
     <div id="sobre">
         <span>Time Wolf's Technology:</span>
         <ul>
