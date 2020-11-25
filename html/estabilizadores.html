@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/cabecalho.css">
+    <link rel="stylesheet" href="../css/main-artigos.css">
+    <link rel="stylesheet" href="../css/estabilizadores.css">
+    <title>Estabilizadores</title>
+</head>
+<body>
+    <header>
+        <a href="sobre.html"><img id="logo" src="../Midia/gray-wolf-logo.png" title="Acerca de Wolf's Tecnology"></a>
+        <a href="../index.html"><img src="../midia/home_white.png" id="home" title="Home Page"></a>
+        <ul>
+            <li>Veja também:</li>
+            <li class="botao"><a href="historia.html">História dos computadores</a></li>
+            <li class="botao"><a href="sobre.html">Sobre</a></li>
+        </ul>
+    </header>
+    <section id="main">
+        <h1 id="intro">Estabilizadores</h1>
+        <div class="in-block"> 
+            <figure class="right">
+                <img src="../midia/estabilizador.png" alt="Estabilizador"><br>
+                <i>Estabilizador comum.</i>
+            </figure>
+            <p>
+                A principal função de um estabilizador é, como o nome sugere, “estabilizar” a corrente, absorvendo variações e entregando sempre 115V para o equipamento. O estabilizador é composto normalmente por um fusível de proteção, uma chave seletora da tensão da rede, tomadas de saída para ligar os aparelhos, chave liga/desliga e uma proteção para linha telefônica em alguns modelos. Os três problemas mais comuns corrigidos pelo uso dos estabilizadores são os brownouts (sub-tensão), surtos (sobre-tensão) e spikes (descargas).
+            </p>
+            <p>
+                O mercado de estabilizadores começou no Brasil em 1941 com a falhas e má qualidade de energia elétrica e a necessidade de uso para os aparelhos da época.  O Brasil é hoje o maior fabricante de estabilizadores do mundo com base instalada de cerca de 48 fabricantes espalhados de norte ao sul do país.
+            </p>
+            <p>
+                Atualmente o uso de estabilizadores caiu em desuso, porem o Brasil ainda produz uma grande quantidade desses aparelhos.
+            </p>
+        </div>
+        <h2 id="probl">Problemas</h2>
+        <dl>
+            <dt>Sub-tensão:</dt>
+            <dd>
+                Nos brownouts, a tensão cai por um determinado período para 90V ou até menos devido a um problema na rede ou até mesmo um chuveiro ligado ou outro equipamento que consuma muita energia. A maioria das fontes mais modernas conseguem manter os computadores ligados com essa corrente porém isso aumenta a amperagem utilizada, o que gera aquecimento fora do normal na mesma.
+            </dd>
+            <dt>Sobrecarga:</dt>
+            <dd>
+                Quando há uma sobrecarga na rede elétrica e é gerada uma sobre-tensão, pode ocorrer um aumento de até 100% ou seja uma tomada de 110V pode ter temporariamente 150V ou até mesmo 220V, o que pode danificar o equipamento. Os estabilizadores filtram essa sobrecarga eliminando os riscos do aparelho.
+            </dd>
+            <dt>Descargas:</dt>
+            <dd>
+                As descargas ocorrem geralmente quando cai um raio na rede elétrica ou um trasnformador queima, lançando assim uma grande tensão nos aparelhos (elas ultrapassam os 1000V facilmente) podendo danificá-lo em partes ou por completo. Apesar de não ter 100 de certeza de que o equipamento será protegido, o estabilizador serve como uma camada a mais na segurança do dispositivo, geralmente o estabilizador pode quimar no lugar dos computadores, ou apenas seu fuzível, que pode ser trocado facilmente, inclusive é comum os estabilizadores virem com um fusível reserva.
+            </dd>
+        </dl>
+        <h2 id="nobre">Nobreaks</h2>
+        <figure class="right">
+            <img src="../midia/nobreak.png" alt="Nobreak"><br>
+            <i>Nobreaks variados.</i>
+        </figure>
+        Nobreaks são tem um funcionamento semelhante ao estabilizadores, além de proteger a falhas na rede elétrica e de descargas eles se diferenciam em um aspecto, eles são capazes de manter dispositivos ligados mesmo com uma falha na rede por conta de uma bateria embutida, isso é assencial para alguns serviços como : caixas de supermercado, bancos, servidores, etc. Os modelos variam muito, principalmente devido a capacidade da bateria e funcionalidades adicionais.
+        
+    </section>
+    <section id="menu-lateral">
+        <div id="content">
+            <span class="center">Acesso rápido</span>
+            <ul id="links-id">
+                <a href="#intro"><li>Introdução</li></a>
+                <a href="#probl"><li>Problemas</li></a>
+                <a href="#nobre"><li>Nobreaks</li></a>
+            </ul>
+        </div>
+    </section>
+    <script>
+        onresize=function(){
+            var nVScroll = document.documentElement.scrollTop 
+            if(nVScroll > 250 && window.innerHeight<365){
+                menu.style.top="5px"
+                menu.style.bottom="auto"
+            }else if(nVScroll<250 && window.innerHeight<656){
+                menu.style.top="213px"
+                menu.style.bottom="auto"
+            }else{
+                menu.style.top="34%"
+                menu.style.bottom="23%"
+            }
+        }
+        onscroll= function(){
+            var nVScroll = document.documentElement.scrollTop 
+            if(nVScroll > 250 && window.innerHeight<365){
+                menu.style.top="5px"
+                menu.style.bottom="auto"
+            }else if(nVScroll<250 && window.innerHeight<656){
+                menu.style.top="213px"
+                menu.style.bottom="auto"
+            }else{
+                menu.style.top="34%"
+                menu.style.bottom="23%"
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+body{
+   text-align: center;
+   font-family: 'Lato', serif;
+}
+#sobre{
+    text-align: left;
+    width: 385px;
+    height: auto;
+    margin: auto;
+}
+/*Contatos*/
+#contatos{
+    padding-left: 20px;
+    display: inline-block;
+    margin: 50px auto 0 auto;
+}
+#if{
+    text-align: center;
+}
+p a{
+    color: blue;
+}
+.left{
+    text-align: left;
+    padding-left: 25px;;
+}
+@font-face{
+    font-family: 'Lato';
+    src: url(../Fontes/Lato-Regular.ttf);
+    font-weight: 400;
+    font-display: swap;
+}

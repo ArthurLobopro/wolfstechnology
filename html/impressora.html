@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/cabecalho.css">
+    <link rel="stylesheet" href="../css/main-artigos.css">
+    <link rel="stylesheet" href="../css/impressora.css">
+    <title>Impressoras</title>
+</head>
+<body>
+    <header>
+        <a href="sobre.html"><img id="logo" src="../Midia/gray-wolf-logo.png" title="Acerca de Wolf's Tecnology"></a>
+        <a href="../index.html"><img src="../Midia/home_white.png" id="home" title="Home Page"></a>
+        <ul>
+            <li>Veja também:</li>
+            <li class="botao"><a href="historia.html">História dos computadores</a></li>
+            <li class="botao"><a href="sobre.html">Sobre</a></li>
+        </ul>
+    </header>
+    <section id="main">
+        <h1 id="intro">Impressoras</h1>
+        As Impressoras são dispositivos de saída que servem para imprimir fotos, documentos, textos ou qualquer outro dado. As impressoras comuns fazem impressões 2D mas existem impressoras 3D que geralmente fazem impressões de objetos usando material derretido (geralmente plástico). Quanto as impressoras 2d (que são o foco dessa página) ela podem ser classificadas em policromática (impressão colorida) ou monocromáticas (impressão preto e branco), sendo que alguns modelos podem vir com scanner para xerox ou digitalizar documentos.
+        <h2 id="tipos">Tipos</h2>
+        Os tipos de impressora variam sendo os mais conhecidos:
+       <ul>
+        <li>Bidirect Print:</li>
+        <dd>
+            As impressoras Bidirect Print consistem na impressão bidirecional. Quando o cabeçote da impressora vai para a direita ele imprime e quando retorna para esquerda também é feita a impressão. Este expediente tecnológico torna as impressoras mais rápidas.
+        </dd>
+        <li>Impressora de jato de tinta</li>
+        <dd>
+            Essas impressoras imprimem através de um cartucho de tinta que vai de 3 à 30 ml. Algumas têm uma ótima qualidade de impressão quase se igualando às de Impressoras de Laser. São as impressoras mais utilizadas.
+        </dd>
+        <li>Impressora a Laser</li>
+        <dd>
+            Essas impressoras magnetizam um cilindro rotativo com carga positiva e depois nos pontos de impressão magnetizam com carga negativa, após isso o tonner (que tem carga positiva) é jogado no cilindro de forma que gruda apenas nas partes com carga negativa (o tonner tem carga positiva), só após isso o papel da impressão recebe uma carga negativa maior e assim que passa o tonner gruda nele fazendo assim a impressão. Este é o método de impressão preto e branco mas o método de impressão colorida varia de acordo com as fabricantes.
+        </dd>
+        <li>Impressora térmica</li>
+        <dd>
+           Embora sejam mais rápidas, mais econômicas e mais silenciosas do que outros modelos de impressoras, as impressoras térmicas praticamente só são utilizadas hoje em dia em aparelhos de fax e máquinas que imprimem cupons fiscais e extratos bancários. O grande problema com este método de impressão é que o papel térmico utilizado desbota com o tempo, obrigando o utilizador a fazer uma fotocópia do mesmo.
+        </dd>
+       <li>Impressora Solvente</li>
+        <dd>
+            Estas impressoras são indicadas para profissionais de comunicação visual e artes gráficas como: Bureaux, empresas gráficas, grandes varejistas, entre outras. Como utiliza tinta a base de solvente é ideal para fazer impressões de banners, imagens de grandes formatos para pontos de venda, faixas, adesivos em vinil, material para adesivação automotiva, outdoors, ampliações, entre outros.
+        </dd>
+       </ul>
+       <div class="center">
+           <figure>
+               <img src="../midia/impressora/impressora.png" alt="Impressora Jato de tinta"><br>
+               <i>Impressora Jato de Tinta</i>
+           </figure>
+           <figure>
+               <img src="../midia/impressora/impressora-laser.png" alt="Impressora a Laser"><br>
+               <i>Impressora a Laser</i>
+           </figure>
+           <figure>
+               <img src="../midia/impressora/impressora-termica.png" alt="Impressora Térmica"><br>
+               <i>Impressora Térmica</i>
+           </figure>
+       </div>
+       <h2 id="inst">Instalação/Utilização</h2>
+       <p>
+        Normalmente as impressoras vem com manuais de intruções que explicam de forma simples a forma de instalação (que varia de acordo com os modelos) também vêm com um CD contento o drive da impressora, que geralmente também pode ser obtido no site oficial do fabricante. Geralmente usam cabos LTP e USB, e alguns modelos mais sofisticados se comunicam via Wi-Fi.
+       </p>
+       <div class="center">
+           <figure>
+               <img src="../midia/impressora/cabo-lpt.png" alt="Cabo LTP"><br>
+               <i>Cabo LTP</i>
+           </figure>
+           <figure>
+               <img src="../midia/impressora/cabo-usb-impressora.png" alt="Cabos USB"><br>
+               <i>Cabo USB tipo B/ Cabo USB tipo A<br>(Tipos mais usados em impressoras)</i>
+           </figure>
+       </div>
+       <p>
+           A utilização das mesmas também é muito simples. Normalmente após clicar no documento ou imagem desejado já aparece a opção "Imprimir" que ao ser selecionada abre o menu de configuração de impressão para ajustes e para imprimir.
+       </p>
+    </section>
+    <section id="menu-lateral">
+        <div id="content">
+            <span class="center">Acesso rápido</span>
+            <ul id="links-id">
+                <a href="#intro"><li>Introdução</li></a>
+                <a href="#tipos"><li>Tipos</li></a>
+                <a href="#inst"><li>Instalação/Utilização</li></a>
+            </ul>
+        </div>
+    </section>
+    <script>
+        var menu = document.getElementById("menu-lateral")
+        onresize=function(){
+            var nVScroll = document.documentElement.scrollTop 
+            if(nVScroll > 250 && window.innerHeight<365){
+                menu.style.top="5px"
+                menu.style.bottom="auto"
+            }else if(nVScroll<250 && window.innerHeight<620){
+                menu.style.top=`213px`
+                menu.style.bottom="auto"
+            }else{
+                menu.style.top=`calc(${window.innerHeight}px /2 - ${menu.offsetHeight}px / 2)`
+                menu.style.bottom=`calc(${window.innerHeight}px /2 - ${menu.offsetHeight}px / 2)`
+            }
+        }
+        onscroll= function(){
+            var nVScroll = document.documentElement.scrollTop 
+            if(nVScroll > 250 && window.innerHeight<365){
+                menu.style.top="5px"
+                menu.style.bottom="auto"
+            }else if(nVScroll<250 && window.innerHeight<620){
+                menu.style.top=`calc(213px - ${nVScroll}px)`
+                menu.style.bottom="auto"
+            }else{
+                menu.style.top=`calc(${window.innerHeight}px /2 - ${menu.offsetHeight}px / 2)`
+                menu.style.bottom=`calc(${window.innerHeight}px /2 - ${menu.offsetHeight}px / 2)`
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/cabecalho.css">
+        <link rel="icon" href="midia/home_white.png">
+        <title>Home Page</title>
+    </head>
+    <body>
+    <header>
+        <a href="html/sobre.html"><img id="logo" src="midia/gray-wolf-logo.png" title="Acerca de Wolf's Tecnology"></a>
+        <ul>
+            <li>Veja também:</li>
+            <li class="botao"><a href="./html/historia.html">História dos computadores</a></li>
+            <li class="botao"><a href="html/sobre.html">Sobre</a></li>
+        </ul>
+    </header>
+        
+        <div class="center">
+            <span class="msg">Clique em qual componente deseja obter informações</span><br>
+            <img src="midia/principal-index.png" usemap="#desktop" > 
+            <map name="desktop">
+            <area shape="rect" coords="23, 39, 180, 370" href="html/gabinete.html" title="Gabinete">
+            <!-- Gabinete -->
+            <area shape="rect" coords="580, 355, 680, 405" href="html/mouse.html" title="Mouse">
+            <!-- Mouse -->
+            <area shape="rect" coords="188, 21, 575, 340" href="html/monitores.html" title="Monitor">
+            <!-- Tela -->
+            <area shape="rect" coords="190, 350, 580, 415" href="html/teclado.html" title="Teclado">
+            <!-- Teclado -->
+            </map>
+    </div><br>
+    <section id="lista">
+        <div id="central">
+        <div class="invisivel" id="direito">
+            <span><img src="" id="img-direita"></span>
+        </div>
+        <table>
+            <tr> 
+                <td> Componentes da Imagem: </td> 
+                <td> Outros Possíveis Componentes: </td> 
+            </tr>
+            <tr> 
+                <td onmousemove="mostra_div(1, 1)" onmouseleave="esconde_div()"> <a href="html/gabinete.html">Gabinete</a></td>
+                <td onmousemove="mostra_div(1, 2)" onmouseleave="esconde_div()"> <a href="html/caixa-de-som.html">Caixa de som</a> </td>
+            </tr>
+            <tr> 
+                <td onmousemove="mostra_div(2, 1)" onmouseleave="esconde_div()"><a href="html/monitores.html" title="Ir para Monitores">Monitor</a></td>
+                <td onmousemove="mostra_div(2, 2)" onmouseleave="esconde_div()"> <a href="html/estabilizadores.html">Estabilizador</a> </td>
+            </tr>
+            <tr> 
+                <td onmousemove="mostra_div(3, 1)" onmouseleave="esconde_div()"> <a href="html/mouse.html">Mouse</a> </td>
+                <td onmousemove="mostra_div(3, 2)" onmouseleave="esconde_div()"> <a href="html/fones.html">Fones de Ouvido</a> </td>
+            </tr>
+            <tr> 
+                <td onmousemove="mostra_div(4, 1)" onmouseleave="esconde_div()"> <a href="html/teclado.html">Teclado</a> </td>
+                <td onmousemove="mostra_div(4, 2)" onmouseleave="esconde_div()"> <a href="html/impressora.html">Impressora</a> </td>
+            </tr>
+        </table>
+    <div class="invisivel" id="esquerdo">
+        <img src="" id="img-esquerda">
+    </div>  
+        </div>
+    </section>
+    <script src="javascript/index.js"></script>
+    </body>
+</html>

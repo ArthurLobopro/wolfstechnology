@@ -1,0 +1,101 @@
+h1{
+    font-size: 32px;
+    border-bottom: 2px solid black;
+}
+ #main{
+    width: 65%;
+    margin: 0 15px;
+    padding: 10px;
+}
+h2{
+    border-bottom: 1px solid black;
+    box-sizing: border-box;
+}
+div.center{
+    text-align: center;
+    display: flex;
+    margin-top: 10px;
+}
+figure{
+    background-color: white;
+    text-align: center;
+    width: min-content;
+}
+figure i{
+    font-family: 'PT Serif', 'Times New Roman',serif;
+    font-size: 16px;
+}
+.center figure{
+    margin: auto;
+}
+dt{
+    font-weight: bold;
+}
+dd{
+    list-style-image: url(../midia/seta-direita.png);
+    display: list-item;
+}
+/*Menu Lateral*/
+#menu-lateral{
+    background-color: white;
+    position: fixed;
+    top: 34%;
+    bottom: 23%;
+    right: 7%;
+    border-radius: 10px;
+    border:1px solid rgba(60,64,67,0.302);
+    box-shadow: 5px 4px 4px 3px rgba(60,64,67,0.302),
+                0 2px 3px 2px rgba(60,64,67,0.149);
+    width: 20%;
+    height: max-content;
+    padding: 30px 0;
+    display: flex;
+}
+#content{
+    margin: auto;
+    text-align: center;
+}
+#links-id{
+    padding: 0;
+    text-align: left;
+    border-left: 2px solid limegreen;
+}
+#links-ut{
+    padding: 0;
+    text-align: left;
+    border-left: 2px solid rgba(250, 50, 50, 0.74);
+}
+#links-id li,#links-ut li{
+    list-style: none;
+    background-color: white;
+    padding: 5px;
+    margin: 5px 0;
+}
+#links-id li:hover,#links-ut li:hover {
+    background-color:rgba(77, 77, 77, 0.212);
+}
+#links-id a,#links-ut a{
+    text-decoration: none;
+    color: black;
+}
+#links-id a:hover,#links-ut a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+@media only screen and (max-height: 760px){
+    #menu-lateral{
+        bottom: auto;
+    }
+}
+@media only screen and (max-height: 659px){
+    #menu-lateral{
+        top:213px;
+    }
+}
+/*Fontes*/
+@font-face{
+    font-family: 'PT Serif';
+    src: url(../Fontes/PTSerif-Regular.ttf);
+    font-weight: 400;
+    font-display: swap;
+}

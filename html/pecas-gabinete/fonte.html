@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/cabecalho.css">
+    <link rel="stylesheet" href="../../css/main-artigos.css">
+    <link rel="stylesheet" href="../../css/fonte.css">
+    <title>Fonte de Alimentação</title>
+</head>
+<body>
+    <header>
+        <a href="../sobre.html"><img id="logo" src="../../midia/gray-wolf-logo.png" title="Acerca de Wolf's Tecnology"></a>
+        <a href="../../index.html"><img src="../../midia/home_white.png" id="home" title="Home Page"></a>
+        <ul>
+            <li>Veja também:</li>
+            <li class="botao"><a href="../historia.html">História dos computadores</a></li>
+            <li class="botao"><a href="../sobre.html">Sobre</a></li>
+        </ul>
+    </header>
+    <section id="main">
+        <h1 id="intro">Fonte de Alimentação</h1>
+        <p>
+          A fonte de alimentação é um dispositivo responsável por converter a tensão elétrica alternada e alta (gerada na tomada) para uma tensão menor e que pode ser alternada ou contínua, dependendo do aparelho eletrônico.
+        </p>
+        <p>
+            De forma geral, a finalidade das fontes é converter a energia e alimentar os aparelhos de maneira eficiente.No caso do computador, por exemplo, caso a fonte não seja de autêntica qualidade, poderá comprometer o funcionamento da máquina, fazendo que ela esquente mais, a energia fornecida não supra a necessidade do aparelho e, consequentemente, provoque a queima do aparelho eletrônico.
+        </p>
+
+    <h2 id="evolução">Modelos de Fontes de Alimentação</h2>
+    <p>
+       Basicamente, existem dois modelos de fontes de alimentação, a linear e a chaveada. Vamos comentar mais detalhadamente sobre cada uma delas abaixo.
+    </p>
+    <p>
+    	<b>Fonte de alimentação linear:</b> consiste em reduzir a tensão obtida da rede elétrica (geralmente 100 ou 220V) para uma voltagem alternada (igual ao da rede elétrica mas com amplitude menor → de 110V para 12V) ou contínua. Sendo dividas em não estabilizada e estabilizada. As fontes não estabilizadas não possuem componentes para regular a tensão de saída e quando estão sem carga (sem estar ligado aos equipamentos), a tensão é mais elevada. Assim, esse tipo de fonte não pode ser utilizada para qualquer tipo de equipamento. Já as fontes estabilizadas mantêm sua tensão constante por meio de componentes reguladores.
+
+    </p>
+
+    <p>
+    	<b>Fonte de alimentação chaveada:</b> consiste em regular a tensão de maneira estabilizada, é mais leve que a linear e normalmente pois, possui uma seleção automática de tensão de entrada, ou seja, pode ser ligada em tomadas de 100 a 240V. Já a fonte linear possui uma chave para selecionar a tensão em 110 ou 220V. Por estes motivos, as fontes chaveadas são muito utilizadas em computadores, DVDs, amplificadores de áudio e outros aparelhos eletrônicos.
+
+    </p>
+
+    <p>
+    	
+    </p>
+
+    <div class="center">
+        <figure>
+            <img src="../../midia/fonte/fonte-1.png" alt="Fonte de Alimentação" title="Fonte de Alimentação" ><br>
+            <i>Fonte Mini 200W SFX ATX</i>
+        </figure>
+        <figure>
+            <img src="../../midia/fonte/fonte-2.png" alt="Fonte de Alimentação" title="Fonte de Alimentação" ><br>
+            <i>Fonte Notebook</i>
+        </figure>
+        <figure>
+            <img src="../../midia/fonte/fonte-3.png" alt="Fonte de Alimentação" title="Fonte de Alimentação" ><br>
+            <i>Fonte ATX 800W</i>
+        </figure>
+    </div>
+    <h2 id="conect">Cuidados/Segurança com a Fonte de Alimentação</h2>
+    	Devemos ter muito cuidado ao instalar um fonte de alimentação, primeiramente verifique a tensão que a fonte está chaveada (isto caso a fonte não possua um auto-switch) e a tensão  da tomada deve estar ligada a essa fonte, evitando a queima da fonte de alimentação por excesso de tensão.<br><br>
+    	Outro cuidado que devemos nos preocupar é com o uso de estabilizadores, sempre verifique a tensão do aparelho. Isso vale também como você conecta os cabos corretamente da fonte nos conectores.<br><br>
+    	Procure sempre limpar o seu computador mensalmente, pois a quantidade de poeira e resíduos que ele acumula pode gerar problemas em algumas peças do computador principalmente na fonte do computador e no cooler do processador. 
+
+    <div class="center">
+        <figure>
+            <img src="../../midia/fonte/fonte-4.png" alt="Fonte de Alimentação" title="Fonte de Alimentação" ><br>
+            <i>Fonte ATX Corsair 500W</i>
+        </figure>
+
+        <figure>
+            <img src="../../midia/fonte/fonte-5.png" alt="Fonte de Alimentação" title="Fonte de Alimentação" ><br>
+            <i>Fonte ATX Corsair 550W</i>
+        </figure>
+
+        <figure>
+            <img src="../../midia/fonte/fonte-6.png" alt="Fonte de Alimentação" title="Fonte de Alimentação"><br>
+            <i>Fonte ATX Fortrek 200W</i>
+        </figure>
+
+    </div>
+    </section>
+    <section id="menu-lateral">
+        <div id="content">
+            <span class="center">Acesso rápido</span>
+            <ul id="links-id">
+                <a href="#intro"><li>Introdução</li></a>
+                <a href="#evolução"><li>Modelos</li></a>
+                <a href="#conect"><li>Cuidados/Seguranças</li></a>
+            </ul>
+            <span class="center">Links úteis</span>
+            <ul id="links-ut">
+                <a href="cabos.html#alime"><li>Cabos</li></a>
+            </ul>
+        </div>
+    </section>
+    <script>
+        var menu = document.getElementById("menu-lateral")
+        onresize=function(){
+            var nVScroll = document.documentElement.scrollTop 
+            if(nVScroll > 250 && window.innerHeight<365){
+                menu.style.top="5px"
+                menu.style.bottom="auto"
+            }else if(nVScroll<250 && window.innerHeight<704){
+                menu.style.top=`calc(213px - ${nVScroll}px)`
+                menu.style.bottom="auto"
+            }else{
+                menu.style.top=`calc(${window.innerHeight}px /2 - ${menu.offsetHeight}px / 2)`
+                menu.style.bottom=`calc(${window.innerHeight}px /2 - ${menu.offsetHeight}px / 2)`
+            }
+        }
+        onscroll= function(){
+            var nVScroll = document.documentElement.scrollTop 
+            if(nVScroll > 250 && window.innerHeight<365){
+                menu.style.top="5px"
+                menu.style.bottom="auto"
+            }else if(nVScroll<250 && window.innerHeight<704){
+                    menu.style.top=`calc(213px - ${nVScroll}px)`
+                    menu.style.bottom="auto"
+            }else{
+                menu.style.top=`calc(${window.innerHeight}px /2 - ${menu.offsetHeight}px / 2)`
+                menu.style.bottom=`calc(${window.innerHeight}px /2 - ${menu.offsetHeight}px / 2)`
+            }
+        }
+    </script>
+</body>
+</html>

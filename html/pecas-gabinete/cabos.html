@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/cabecalho.css">
+    <link rel="stylesheet" href="../../css/main-artigos.css">
+    <link rel="stylesheet" href="../../css/cabos.css">
+    <title>Cabos</title>
+</head>
+<body>
+    <header>
+        <a href="../sobre.html"><img id="logo" src="../../midia/gray-wolf-logo.png" title="Acerca de Wolf's Tecnology"></a>
+        <a href="../../index.html"><img src="../../midia/home_white.png" id="home" title="Home Page"></a>
+        <ul>
+            <li>Veja também:</li>
+            <li class="botao"><a href="../historia.html">História dos computadores</a></li>
+            <li class="botao"><a href="../sobre.html">Sobre</a></li>
+        </ul>
+    </header>
+    <section id="main">
+        <h1 id="intro">Cabos</h1>
+        Os cabos são importantes em diversos dispositivos, servem para conectar componentes separados de uma placa ou até mesmo nelas (chamados de jumpers). Os cabos podem ser dividos em dois tipos cabos de alimentação e cabos de trasnferência, que podem ser subdivididos em outros grupos.
+        <h2 id="alime">Cabos de Alimentação</h2>
+        Os cabos de alimentação são os mais comuns de serem vistos, se você está no cumputador pode observar cabos de alimentação em sua fonte e no monitor, se estiver no celular o seu carregador tem um cabo de alimentação. Eles fornecem energia aos dispositivos tanto pelo meio externo como interno, isso pode ser observado perfeitamente nos computadores uma vez que seus variados componentes de hardware funcionam com voltagens diferentes tendo cabos específicos para cada componente.
+        <div class="center">
+            <figure>
+                <img src="../../midia/cabos/cabo-alimentacao.png" alt="Cabo de Alimentação"><br>
+                <i>Cabo de Alimentação comum em monitores e fontes.</i>
+            </figure>
+            <figure>
+                <img src="../../midia/cabos/cabos-fonte.png" alt="Cabos de uma fonte"><br>
+                <i>Cabos de uma fonte de alimentação comum.</i>
+            </figure>
+        </div>
+        <h2 id="transfer">Cabos de trasnferência</h2>
+        Os cabos de trasnferência são usados para trasnferir algum tipo de dado, porém alguns também podem ser usados como cabo de alimentação (o usb por exemplo).
+        Os cabos de trasnferência podem ser subdivididos ou outros tipos, sendo:
+        <dl>
+            <dt>Cabo de Dados</dt>
+            <dd>
+                Os cabos de dados geralmente são usados para trasnferir dados entre dispositivos, os mais comuns são os cabos SATA e USB sendo que os cabos USB, além de uma variedade de tipos, em alguns casos também podem ser usados como cabos de alimentação.
+                <div class="center">
+                    <figure>
+                        <img src="../../midia/cabos/sata.png" alt="Cabo SATA"><br>
+                        <i>Cabo SATA</i>
+                    </figure>
+                    <figure>
+                        <img src="../../midia/cabos/cabo-usb.png" alt="Cabo USB"><br>
+                        <i>Cabo USB</i>
+                    </figure>
+                </div>
+            </dd>
+            <dt id="cabo-de-video">Cabo de Vídeo</dt>
+            <dd>
+                Usados em monitores e televisões, são responsáveis por trasnferir as informações de vídeo (e as vezes até o áudio, como é o caso do HDMI) para o dispositivo de saída.
+            </dd>
+            <div class="center">
+                <figure>
+                    <img src="../../midia/cabos/vga.png" alt="Cabo VGA"><br>
+                    <i>Cabo VGA</i>
+                </figure>
+                <figure>
+                    <img src="../../midia/cabos/hdmi.png" alt="Cabo HDMI"><br>
+                    <i>Cabo HDMI</i>
+                </figure>
+            </div>
+            <dt>Cabo de Rede</dt>
+            <dd>
+                Os cabos de rede são responsáveis por levar a internet até seu dispositivo, atualmente grande parte das conexões de internet é feita por meio de fibra óptica, porém ao chegar na sua casa ela é convertida para um cabo ethernet ou para sinal wi-fi.
+                <div class="center">
+                    <figure>
+                        <img src="../../midia/cabos/cabo-ethernet.png" alt="Cabo Ethernet"><br>
+                        <i>Cabo Ethernet</i>
+                    </figure>
+                    <figure>
+                        <img src="../../midia/cabos/fibra-optica.png" alt="Fibra Óptica"><br>
+                        <i>Cabo de Várias Fibra Ópticas</i>
+                    </figure>
+                </div>
+            </dd>
+        </dl>
+        <h2 id="prec">Precauções</h2>
+        Ao manusear cabos de alimentação deve-se sempre verificar se estão desconectados da rede elétrica pois há riscos de choque elétrico, também é importante trocar cabos desencapados ou partidos.
+        Cabos de trasnferência defeituosos ou com mal contato podem ocasionar em dados corrompidos, para evitar que isso ocorra troque-os imediatamente após perceber o problema.
+    </section>
+    <section id="menu-lateral">
+        <div id="content">
+            <span class="center">Acesso rápido</span>
+            <ul id="links-id">
+                <a href="#intro"><li>Introdução</li></a>
+                <a href="#alime"><li>Cabos de Alimentação</li></a>
+                <a href="#transfer"><li>Cabos de Transferência</li></a>
+                <a href="#prec"><li>Precauções</li></a>
+            </ul>
+        </div>
+    </section>
+    <script>
+        var menu = document.getElementById("menu-lateral")
+        onresize=function(){
+            var nVScroll = document.documentElement.scrollTop 
+            if(nVScroll > 250 && window.innerHeight<365){
+                menu.style.top="5px"
+                menu.style.bottom="auto"
+            }else if(nVScroll<250 && window.innerHeight<704){
+                menu.style.top=`213px`
+                menu.style.bottom="auto"
+            }else{
+                menu.style.top=`calc(${window.innerHeight}px /2 - ${menu.offsetHeight}px / 2)`
+                menu.style.bottom=`calc(${window.innerHeight}px /2 - ${menu.offsetHeight}px / 2)`
+            }
+        }
+        onscroll= function(){
+            var nVScroll = document.documentElement.scrollTop 
+            if(nVScroll > 250 && window.innerHeight<365){
+                menu.style.top="5px"
+                menu.style.bottom="auto"
+            }else if(nVScroll<250 && window.innerHeight<704){
+                menu.style.top=`calc(213px - ${nVScroll}px)`
+                menu.style.bottom="auto"
+            }else{
+                menu.style.top=`calc(${window.innerHeight}px /2 - ${menu.offsetHeight}px / 2)`
+                menu.style.bottom=`calc(${window.innerHeight}px /2 - ${menu.offsetHeight}px / 2)`
+            }
+        }
+    </script>
+</body>
+</html>

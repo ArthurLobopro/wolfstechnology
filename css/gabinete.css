@@ -1,0 +1,64 @@
+body{
+    text-align: center;
+}
+.mensagem{
+    margin: 10px 0;
+    font-size: 30px;
+}
+#pecas{
+    margin: 15px;
+}
+table{
+    font-family: 'Lato', serif;
+    font-size: 15px;
+    margin: 20px 30px 20px;
+    float: left;
+}
+td{
+    width: 300px;
+    height: 30px;
+    border: 1px solid black;
+    color: white;
+    text-align: center;
+    background-color: gray;
+}
+td a{
+    color: white;
+    text-decoration: none;
+}
+#lista{
+    display: flex;
+    padding: 5%;
+}
+#center{
+    margin: auto;
+    display: inline-block;
+}
+.invisivel{
+    margin-top: 10px;
+    width: 225px;
+    height: 225px; 
+    float: left;
+    background-color:white;
+    visibility: hidden;
+    display: flex;
+}
+.invisivel img{
+    margin: auto;
+    max-width: 225px;
+    max-height: 225px;
+}
+@font-face{
+    font-family: 'Lato';
+    src: url(../Fontes/Lato-Regular.ttf);
+    font-weight: 400;
+    font-display: swap;
+}
+@media only screen and (max-width: 1283px){
+    #center{
+        display: grid;
+    }
+    .invisivel{
+        margin: auto;
+    }
+}

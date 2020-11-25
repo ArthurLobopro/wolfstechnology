@@ -1,0 +1,44 @@
+body{
+    display: block;
+}
+#main{
+    min-width: 755px;
+}
+#menu-lateral{
+    max-height: calc(min-height + 20px);
+}
+.right{
+    float: right;
+}
+div{
+    display: inline-block;
+}
+h1{
+    width: fit-content;
+    margin: 15px auto;
+    border-bottom: none;
+ }
+ @media only screen and (max-height: 716px){
+    #menu-lateral{
+        top:213px;
+        bottom: auto;
+    }
+}
+@media only screen and (max-height: 659px){
+    #menu-lateral{
+        top:213px;
+    }
+}
+/*Menu lateral*/
+
+@media only screen and (max-width: 1110px){
+    #menu-lateral{
+        right: 8px;
+    }
+}
+@media only screen and (max-width: 1016px){
+    #menu-lateral{
+        display: none;
+        
+    }
+}

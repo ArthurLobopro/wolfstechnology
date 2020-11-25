@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/cabecalho.css">
+    <link rel="stylesheet" href="../../css/main-artigos.css">
+    <link rel="stylesheet" href="../../css/driver-cd.css">
+    <title>Drive CD</title>
+</head>
+<body>
+    <header>
+        <a href="../sobre.html"><img id="logo" src="../../midia/gray-wolf-logo.png" title="Acerca de Wolf's Tecnology"></a>
+        <a href="../../index.html"><img src="../../midia/home_white.png" id="home" title="Home Page"></a>
+        <ul>
+            <li>Veja também:</li>
+            <li class="botao"><a href="../historia.html">História dos computadores</a></li>
+            <li class="botao"><a href="../sobre.html">Sobre</a></li>
+        </ul>
+    </header>
+    <section id="main">
+        <h1 id="intro">Drive CD</h1>
+        <p>
+            Drive é aquele dispositivo utilizado para fazer a leitura de algum meio externo, como, por exemplo um CD, um DVD e até mesmo um disco rígido. É um dispositivo físico, ou seja, é um hardware, e você pode visualizá-lo instalado no computador mesmo com ele desligado.
+        </p>
+        <p>
+             A principal função de um Drive é fazer a leitura de um meio externo e enviar a informação lida para dentro do computador. Se você pluga o seu celular via USB ao seu notebook, é criado então um novo drive, permitindo que seu computador faça a leitura do conteúdo desse dispositivo. O mesmo ocorre com pendrives, discos rígidos externos, CDs, DVDs e discos de Blu-Ray e até mesmo os já defasados disquetes. É por isso que você já deve ter ouvido falar em “drive de CD” ou “drive de disquete”. 
+
+    <h2 id="evolução">Emulação de um Drive CD/DVD</h2>
+    <p>
+        Primeiro você deve procurar algum tipo de emulador na web, como por exemplo o Daemon Tools Lite que é uma ótima ferramenta para emular programas. 
+        </p>
+    </p>
+    Logo após ter baixado inicie a instalação e siga os passos corretamente para que o programa seja instalada. No terceiro passo deveremos saber como utilizaremos o programa, durante a instalação do programa o drive virtual é automaticamente criado, e uma letra é atribuída a ele. No nosso caso, é a letra “F:”, aparecendo na tela inicial do programa como "[DT - 0] (F:) Sem mídia". No Windows Explorer existe um novo drive com o nome “Unidade de BD-ROM”, o que significa que ele pode ler arquivos .ISO tanto de imagens de Blu-Ray quanto de CDs ou DVDs.
+    <p>
+       Execute o arquivo desejado e seja feliz com seu emulador. Todos os arquivos utilizados no Daemon Tools Lite ficam armazenados na área de "Catálogo de Imagens", portanto você não precisa fazer esse processo todas as vezes que for montar uma imagem. Basta clicar com o botão direito no arquivo e selecionar "Montar".
+    </p>
+
+    <div class="center">
+        <figure>
+            <img src="../../midia/Driver-CD/driver-cd-1.png" alt="Driver CD" title="Driver CD" width="200px"><br>
+            <i>Driver CD Comum</i>
+        </figure>
+        <figure>
+            <img src="../../midia/Driver-CD/driver-cd-2.png" alt="Driver CD" title="Driver CD" width="200px"><br>
+            <i>Driver CD Comum</i>
+        </figure>
+        <figure>
+            <img src="../../midia/Driver-CD/driver-cd-3.png" alt="Driver CD" title="Driver CD" width="200px"><br>
+            <i>Driver CD Slim</i>
+        </figure>
+    </div>
+    <h2 id="conect">Evolução Driver CD</h2>
+    Atualmente o driver de CD não é muito utilizado em computadores, mas um pequena parte da sociedade ainda utiliza deste meio para gravar arquivos ou músicas em CD's, porém esse dispositivo veio a ser revolucionário antigamente, pessoas acreditavam que está peça seria a resolução dos problemas, porém não sabiam que ela poderia ser substituída por dispositivos melhores e mais potentes, apresentando melhores desempenhos, etc. <br> <br> Porém existem diferentes tipos de driver sendo ele interno, que seria integrado dentro do gabinete e o driver externo que consiste em ser um usb portatil, uma caixa vamos dizer por assim, podendo ter a capacidade de armazenar arquivos e dados pessoais, sem ter a chance de perde-los. <br> <br>
+    <div class="center">
+        <figure>
+            <img src="../../midia/Driver-CD/driver-cd-4.png" alt="Driver CD" title="Driver CD" width="200px"><br>
+            <i>Driver CD/DVD Portátil</i>
+        </figure>
+
+        <figure>
+       		<img src="../../midia/Driver-CD/driver-cd-5.png" alt="Driver CD" title="Driver CD" width="200px"><br>
+            <i>Driver CD/DVD </i>
+        </figure>
+
+        <figure>
+			<img src="../../midia/Driver-CD/driver-cd-6.png" alt="Driver CD" title="Driver CD" width="200px"><br>
+          	<i>Driver CD/DVD Slim </i>
+        </figure>
+    </div>
+    </section>
+    <section id="menu-lateral">
+        <div id="content">
+            <span class="center">Acesso rápido</span>
+            <ul id="links-id">
+                <a href="#intro"><li>Introdução</li></a>
+                <a href="#evolução"><li>Emulação de um Drive CD/DVD</li></a>
+                <a href="#conect"><li>Evolução Driver CD</li></a>
+            </ul>
+        </div>
+    </section>
+    <script>
+        var menu = document.getElementById("menu-lateral")
+        onresize=function(){
+            var nVScroll = document.documentElement.scrollTop 
+            if(nVScroll > 250 && window.innerHeight<365){
+                menu.style.top="5px"
+                menu.style.bottom="auto"
+            }else if(nVScroll<250 && window.innerHeight<704){
+                
+                menu.style.top=`calc(213px - ${nVScroll}px)`
+                menu.style.bottom="auto"
+            }else{
+                menu.style.top=`calc(${window.innerHeight}px /2 - ${menu.offsetHeight}px / 2)`
+                menu.style.bottom=`calc(${window.innerHeight}px /2 - ${menu.offsetHeight}px / 2)`
+            }
+        }
+        onscroll= function(){
+            var nVScroll = document.documentElement.scrollTop 
+            if(nVScroll > 250 && window.innerHeight<365){
+                menu.style.top="5px"
+                menu.style.bottom="auto"
+            }else if(nVScroll<250 && window.innerHeight<704){
+                    menu.style.top=`calc(213px - ${nVScroll}px)`
+                    menu.style.bottom="auto"
+            }else{
+                menu.style.top=`calc(${window.innerHeight}px /2 - ${menu.offsetHeight}px / 2)`
+                menu.style.bottom=`calc(${window.innerHeight}px /2 - ${menu.offsetHeight}px / 2)`
+            }
+        }
+    </script>
+</body>
+</html>

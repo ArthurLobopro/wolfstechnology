@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/cabecalho.css">
+    <link rel="stylesheet" href="../../css/main-artigos.css">
+    <link rel="stylesheet" href="../../css/processador.css">
+    <title>Processadores</title>
+</head>
+<body>
+    <header>
+        <a href="../sobre.html"><img id="logo" src="../../midia/gray-wolf-logo.png" title="Acerca de Wolf's Tecnology"></a>
+        <a href="../../index.html"><img src="../../midia/home_white.png" id="home" title="Home Page"></a>
+        <ul>
+            <li>Veja também:</li>
+            <li class="botao"><a href="../historia.html">História dos computadores</a></li>
+            <li class="botao"><a href="../sobre.html">Sobre</a></li>
+        </ul>
+    </header>
+    <section id="main">
+        <h1 id="intro">Processadores</h1>
+        <p>
+            O processador é chamado de CPU (unidade central de processamento) e está acoplado à placa-mãe. Ele é um pequeno chip que faz todo o controle das operações que serão realizadas pelo computador. Quanto melhor o processador, maior agilidade as tarefas serão realizadas.
+        </p>
+        <p>
+            O processador é composto pelo cooler, um sistema capaz de controlar a sua temperatura padrão. Se houver essa regulação, maior vida útil terá o chip e isso irá variar de acordo com o fabricante. Todo processador é formado por um conjunto de pinos (contatos) que servem para serem conectados em determinado tipo de placa-mãe. Os fabricantes mais conhecidos deste componente são Intel e AMD. Exemplo de processadores: Intel Core 2 Duo, Intel Core i7, AMD Athlon X2, AMD Phenom II, entre outros.
+        </p>
+    <h2 id="evolução">Evolução dos Processadores</h2>
+    <p>
+        Desde o primeiro 4004 da Intel, lançado em 1971, os processadores evoluíram extremamente. Os processadores não foram apenas os componentes dos computadores que mais evoluíram, mas sim o dispositivo que evoluiu mais rápido em toda a história da humanidade. Não é à toa que o transístor foi considerado a invenção do século.
+    </p>
+    <p>
+        As técnicas de construção de processadores evoluíram, o 8088 que possuía apenas 29,000 transístores, e operava a apenas 4.7 MHz, enquanto o Pentium 4 tem 42.000.000 de transístores e opera a frequências acima de 2.0 GHz.
+    </p>
+    <p>
+        O primeiro transístor, criado no início da década de 50, foi feito a mão e não era nada pequeno. Depois de algum tempo, passaram a construir transístores usando silício e desenvolveram a litografia óptica, técnica utilizada até hoje, que usa luz, máscaras e vários produtos químicos diferentes para esculpir as camadas do transístor, permitindo alcançar nível incríveis de miniaturização.
+    </p>
+    <div class="center">
+        <figure>
+            <img src="../../midia/processadores/processador-mmx.png" alt="Processador MMX" title="Processador MMX" ><br>
+            <i>Processador MMX.</i>
+        </figure>
+        <figure>
+            <img src="../../midia/processadores/processador-k6.png" alt="Processador AMD K6" title="Processador AMD K6" ><br>
+            <i>Processador AMD K6.</i>
+        </figure>
+        <figure>
+            <img src="../../midia/processadores/processador-i9.png" alt="Processador Intel I9" title="Processador Intel I9" ><br>
+            <i>Processador Intel I9.</i>
+        </figure>
+    </div>
+    <h2 id="conect">ULA</h2>
+    ULA é a sigla para Unidade Lógica Aritmética. Trata-se do circuito que se encarrega de realizar as operações matemáticas requisitadas por um determinado programa.
+    O termo “cérebro eletrônico” está longe de classificar e resumir o funcionamento de um processador. <br> <br> No entanto, a Unidade de Controle é o que há de mais próximo a um cérebro dentro do processador. Esse controlador define o regime de funcionamento e da ordem às diversas tarefas do processador. <br> <br>
+    <div class="center">
+        <figure>
+            <img src="../../midia/processadores/ula.png" alt="Exemplo da ULA" title="Exemplo da ULA"><br>
+            <i>Funcionamento ULA</i>
+        </figure>
+       
+        </figure>
+    </div>
+    </section>
+    <section id="menu-lateral">
+        <div id="content">
+            <span class="center">Acesso rápido</span>
+            <ul id="links-id">
+                <a href="#intro"><li>Introdução</li></a>
+                <a href="#evolução"><li>Evolução</li></a>
+                <a href="#conect"><li>ULA</li></a>
+            </ul>
+            <span class="center">Links úteis</span>
+            <ul id="links-ut">
+                <a href="placa-de-video.html"><li>Placa de Vídeo</li></a>
+                <a href="cooler.html"><li>Cooler</li></a>
+                <a href="memoria-ram.html"><li>Memória RAM</li></a>
+            </ul>
+        </div>
+    </section>
+    <script>
+        var menu = document.getElementById("menu-lateral")
+        onresize=function(){
+            var nVScroll = document.documentElement.scrollTop 
+            if(nVScroll > 250 && window.innerHeight<365){
+                menu.style.top="5px"
+                menu.style.bottom="auto"
+            }else if(nVScroll<250 && window.innerHeight<737){
+                menu.style.top=`213px`
+                menu.style.bottom="auto"
+            }else{
+                menu.style.top=`calc(${window.innerHeight}px /2 - ${menu.offsetHeight}px / 2)`
+                menu.style.bottom=`calc(${window.innerHeight}px /2 - ${menu.offsetHeight}px / 2)`
+            }
+        }
+        onscroll= function(){
+            var nVScroll = document.documentElement.scrollTop 
+            if(nVScroll > 250 && window.innerHeight<365){
+                menu.style.top="5px"
+                menu.style.bottom="auto"
+            }else if(nVScroll<250 && window.innerHeight<737){
+                menu.style.top=`calc(213px - ${nVScroll}px)`
+                menu.style.bottom="auto"
+            }else{
+                menu.style.top=`calc(${window.innerHeight}px /2 - ${menu.offsetHeight}px / 2)`
+                menu.style.bottom=`calc(${window.innerHeight}px /2 - ${menu.offsetHeight}px / 2)`
+            }
+        }
+    </script>
+</body>
+</html>

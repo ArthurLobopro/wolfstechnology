@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/cabecalho.css">
+    <link rel="stylesheet" href="../css/main-artigos.css">
+    <link rel="stylesheet" href="../css/teclado.css">
+    <title>Teclados</title>
+</head>
+<body>
+    <header>
+        <a href="sobre.html"><img id="logo" src="../midia/gray-wolf-logo.png" title="Acerca de Wolf's Tecnology"></a>
+        <a href="../index.html"><img src="../midia/home_white.png" id="home" title="Home Page"></a>
+        <ul>
+            <li>Veja também:</li>
+            <li class="botao"><a href="historia.html">História dos computadores</a></li>
+            <li class="botao"><a href="sobre.html">Sobre</a></li>
+        </ul>
+    </header>
+    <section id="main">
+        <h1 id="intro">Teclados</h1>
+        <p>
+            Teclados são dispositivos com vários botões,sendo que cada um tem sua função (que geralmente é escrever letras ou números),seu layout é baseado nas antigas máquinas de escrever porém com mais teclas devido a funções dos computadores, ele era o principal dispositivo de controle dos computadores antes da chegada do mouse, pois todos funcinavam por comandos em uma interface de texto. Apesar de dividir a tarefa de controlar os computadores, ele ainda é o principal dispositivo de entrada de dados.
+        </p>
+        <p>
+            Como os teclados são padronizados, nem todos os caracteres existentes são gravados nele, alguns caracteres só podem ser escrito pressionando duas ou mais teclas como acentos, e outros necessitam de comandos específicos. Se você é usuário de windows pode usar a combinação das teclas windows + R para abrir o menu executar do windows, se você digitar charmap e der enter irá abrir em uma nova janela um quadro com todos os caracteres das fontes instaladas (algumas fontes não cobrem todos os caracteres especiais).
+        </p>
+        <div class="block">
+            <figure class="center">
+                <div>
+                    <img src="../midia/teclados/menu-executar.png"><br>
+                    <i>Menu executar do Windows</i>
+                </div>
+            </figure>
+            <figure class="center">
+                <div>
+                    <img src="../midia/teclados/mapa-caracteres.png"><br>
+                    <i>Mapa de caracteres do Windows.</i>
+                </div>
+            </figure>
+        </div>
+        <h2 id="estrut">Estrutura/Funcionamento</h2>
+        <figure class="right">
+            <img src="../midia/teclados/teclado.png" alt="Teclado" title="Teclado Comum"><br>
+            <i>Teclado Comum</i>
+        </figure>
+        <p>
+            Como já dito anteriormente o teclado é formado por um arranjo de teclas ou botões de forma semelhante as antigas máquinas de escrever, sendo aproximadamente 50% dos botões apenas para a inserção de caracteres. Essas teclas são ligadas a um chip dentro do teclado que detecta qual tecla foi pressionanda e envia a informação para o computadore por meio de cabos (os conectores mais comuns são PS/2 e USB) ou por meio de conexão sem fio (geralmente via  bluetooth).
+        </p>
+        <p>
+            O número de teclas em um teclado padrão varia de 101 a 104 teclas, entretanto, considerando-se teclas de atalho e outros recursos, é comum encontrar teclados de até 130 teclas. Também há variantes compactas com menos de 90 teclas, geralmente encontradas em laptops e em computadores de mesa compactos.
+        </p>
+        <div class="center">
+            <figure>
+                <img src="../midia/teclados/maquina-escrever.png" alt="Maquina de Escrever" title="Teclado Maquina de Escrever"><br>
+                <i>Teclado de uma Maquina de Escrever</i>
+            </figure>
+            <figure>
+                <img src="../midia/cabo-teclado.png" alt="Cabo PS/2" title="Cabo PS/2"><br>
+                <i>Cabo PS/2 para teclado</i>
+            </figure>
+        </div>
+        
+        
+    </section>
+    <section id="menu-lateral">
+        <div id="content">
+            <span class="center">Acesso rápido</span>
+            <ul id="links-id">
+                <a href="#intro"><li>Introdução</li></a>
+                <a href="#estrut"><li>Estrutura/Funcionamento</li></a>
+            </ul>
+            <span class="center">Links úteis</span>
+            <ul id="links-ut">
+                <a href="mouse.html"><li>Mouse</li></a>
+            </ul>
+        </div>
+    </section>
+    <script>
+        var menu = document.getElementById("menu-lateral")
+        onresize=function(){
+            var nVScroll = document.documentElement.scrollTop 
+            if(nVScroll > 250 && window.innerHeight<365){
+                menu.style.top="5px"
+                menu.style.bottom="auto"
+            }else if(nVScroll<250 && window.innerHeight<704){
+                menu.style.top=`213px`
+                menu.style.bottom="auto"
+            }else{
+                menu.style.top=`calc(${window.innerHeight}px /2 - ${menu.offsetHeight}px / 2)`
+                menu.style.bottom=`calc(${window.innerHeight}px /2 - ${menu.offsetHeight}px / 2)`
+            }
+        }
+        onscroll= function(){
+            var nVScroll = document.documentElement.scrollTop 
+            if(nVScroll > 250 && window.innerHeight<365){
+                menu.style.top="5px"
+                menu.style.bottom="auto"
+            }else if(nVScroll<250 && window.innerHeight<704){
+                menu.style.top=`calc(213px - ${nVScroll}px)`
+                menu.style.bottom="auto"
+            }else{
+                menu.style.top=`calc(${window.innerHeight}px /2 - ${menu.offsetHeight}px / 2)`
+                menu.style.bottom=`calc(${window.innerHeight}px /2 - ${menu.offsetHeight}px / 2)`
+            }
+        }
+    </script>
+</body>
+</html>

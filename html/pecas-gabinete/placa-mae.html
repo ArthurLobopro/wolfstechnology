@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/cabecalho.css">
+    <link rel="stylesheet" href="../../css/main-artigos.css">
+    <link rel="stylesheet" href="../../css/placa-mae.css">
+    <title>Placa Mãe</title>
+</head>
+<body>
+    <header>
+        <a href="../sobre.html"><img id="logo" src="../../midia/gray-wolf-logo.png" title="Acerca de Wolf's Tecnology"></a>
+        <a href="../../index.html"><img src="../../midia/home_white.png" id="home" title="Home Page"></a>
+        <ul>
+            <li>Veja também:</li>
+            <li class="botao"><a href="../historia.html">História dos computadores</a></li>
+            <li class="botao"><a href="../sobre.html">Sobre</a></li>
+        </ul>
+    </header>
+    <section id="main">
+        <h1 id="intro">Placa-Mãe</h1>
+        <p>
+            A placa mãe é a parte do computador responsável por conectar e interligar todos os componentes do computador, ou seja, processador com memória RAM, disco rígido, placa gráfica, entre outros.
+        </p>
+        <p>
+            Na placa-mãe, todos os componentes que formam o computador são unidos e ligados entre si. Pode-se entender a placa como uma central que resolve problemas de espaço, uma vez que une todas as partes do sistema numa só, rede de fios, porque dispõe de caminhos que permitem a troca de informação entre processadores, memórias, placas e etc. Permitindo o tráfego de informação, a placa também alimenta alguns periféricos com a energia elétrica que recebe da fonte do gabinete. Todas essas funções tornam o nome “mãe” algo bem lógico: sem ela, o computador é apenas um amontoado de chips e placas independentes.
+        </p>
+    <h2 id="evolução">Evolução da Placa-Mãe</h2>
+    <p>
+        Uma das primeiras placas-mãe surgiu inicialmente em um computador da empresa IBM, no ano de 1982. O design dessas placas-mãe continua basicamente o mesmo das primeiras, até os dias atuais. A placa da IBM assim como as sucessoras tem portas e slots para vários tipos de hardwares, que são ligados nela para que a comunicação entre os componentes seja possível.
+    </p>
+    <p>
+        A placa-mãe passou por diversas mudanças porém seu formato continuou idêntico, sendo apenas uma melhor do que a outra, ou seja, há diferentes tipos como por exemplo a placa-mãe, BTX que é um formato de criado pela Intel e lançado em 2003 para substituir o formato ATX. O formato ITX que é um padrão de placa-mãe criado em outubro de 2001 pela VIA Technologies destinada a computadores altamente integrados e compactados.
+    </p>
+    <div class="center">
+        <figure>
+            <img src="../../midia/placa-mae/placa-mae-btx.png" alt="Placa-Mãe BTX" title="Placa-Mãe BTX" width="200px"><br>
+            <i>Placa-Mãe BTX</i>
+        </figure>
+        <figure>
+            <img src="../../midia/placa-mae/placa-mae-atx.png" alt="Placa-Mãe ATX" title="Placa-Mãe ATX" width="180px"><br>
+            <i>Placa-Mãe ATX</i>
+        </figure>
+        <figure>
+            <img src="../../midia/placa-mae/placa-mae-itx.png" alt="Placa-Mãe ITX" title="Placa-Mãe ITX" width="200px"><br>
+            <i>Placa-Mãe ITX.</i>
+        </figure>
+    </div>
+    <h2 id="conect">Funcionamento e Componentes</h2>
+    A placa-mãe realiza a interconexão das peças componentes dos microcomputadores. Assim, processador, memória, placa de vídeo, HD, teclado, mouse, etc. estão ligados diretamente à placa-mãe. Ela possui diversos componentes eletrônicos (circuitos integrados, capacitores, resistores, etc) e entradas especiais (slots) para que seja possível conectar os vários dispositivos. <br> <br>
+        Acompanhe logo abaixo alguns componentes que são utilizados em uma placa-mãe:
+        <ul>
+        <li>Memória RAM</li>
+        <li>Processador</li>
+        <li>Fonte de Alimentação</li>
+        <li>Bateira</li>
+        <li>Chipset</li>
+        </ul>
+
+
+    <div class="center">
+        <figure>
+            <img src="../../midia/memoria-ram/memoria-ram.png" alt="Memória RAM" title="Memória RAM"  width="200px"><br>
+            <i>Memória RAM</i>
+        </figure>
+
+        <figure>
+            <img src="../../midia/processadores/processador.png" alt="Processador" title="Processador" width="200px"><br>
+            <i>Processador</i>
+        </figure>
+
+        <figure>
+            <img src="../../midia/fonte/fonte.png" alt="Fonte de Alimentação" title="Fonte de Alimentação"  width="200px"><br>
+            <i>Fonte de Alimentação</i>
+        </figure>
+
+    </div>
+    </section>
+    <section id="menu-lateral">
+        <div id="content">
+            <span class="center">Acesso rápido</span>
+            <ul id="links-id">
+                <a href="#intro"><li>Introdução</li></a>
+                <a href="#evolução"><li>Evolução</li></a>
+                <a href="#conect"><li>Funcionamento/Componentes</li></a>
+            </ul>
+            <span class="center">Links úteis</span>
+            <ul id="links-ut">
+                <a href="processadores.html"><li>Processadores</li></a>
+                <a href="memoria-ram.html"><li>Memória RAM</li></a>
+                <a href="fonte.html"><li>Fontes</li></a>
+            </ul>
+        </div>
+    </section>
+    <script>
+        var menu = document.getElementById("menu-lateral")
+        onresize=function(){
+            var nVScroll = document.documentElement.scrollTop 
+            if(nVScroll > 250 && window.innerHeight<365){
+                menu.style.top="5px"
+                menu.style.bottom="auto"
+            }else if(nVScroll<250 && window.innerHeight<760){
+                menu.style.top=`213px`
+                menu.style.bottom="auto"
+            }else{
+                menu.style.top=`calc(${window.innerHeight}px /2 - ${menu.offsetHeight}px / 2)`
+                menu.style.bottom=`calc(${window.innerHeight}px /2 - ${menu.offsetHeight}px / 2)`
+            }
+        }
+        onscroll= function(){
+            var nVScroll = document.documentElement.scrollTop 
+            if(nVScroll > 250 && window.innerHeight<365){
+                menu.style.top="5px"
+                menu.style.bottom="auto"
+            }else if(nVScroll<250 && window.innerHeight<760){
+                menu.style.top=`calc(213px - ${nVScroll}px)`
+                menu.style.bottom="auto"
+            }else{
+                menu.style.top=`calc(${window.innerHeight}px /2 - ${menu.offsetHeight}px / 2)`
+                menu.style.bottom=`calc(${window.innerHeight}px /2 - ${menu.offsetHeight}px / 2)`
+            }
+        }
+    </script>
+</body>
+</html>

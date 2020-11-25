@@ -1,0 +1,18 @@
+.float-rigth {
+    float: right;
+    margin: auto;
+    width: min-content;
+}
+#main{
+    min-width: 745px;
+}
+@media only screen and (max-width: 1085px){
+    #menu-lateral{
+        right: 8px;
+    }
+}
+@media only screen and (max-width: 1000px){
+    #menu-lateral{
+        display: none;
+    }
+}

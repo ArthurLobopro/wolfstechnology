@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/cabecalho.css">
+    <link rel="stylesheet" href="../css/main-artigos.css">
+    <link rel="stylesheet" href="../css/fones.css">
+    <title>Fones</title>
+</head>
+<body>
+    <header>
+        <a href="sobre.html"><img id="logo" src="../midia/gray-wolf-logo.png" title="Acerca de Wolf's Tecnology"></a>
+        <a href="../index.html"><img src="../midia/home_white.png" id="home" title="Home Page"></a>
+        <ul>
+            <li>Veja também:</li>
+            <li class="botao"><a href="historia.html">História dos computadores</a></li>
+            <li class="botao"><a href="sobre.html">Sobre</a></li>
+        </ul>
+    </header>
+    <section id="main">
+        <h1 id="intro">Fones de Ouvido</h1>
+        <p>
+            Fones de Ouvido são pares de pequenos auto-falantes usados sobre as orelhas ou no canal auditivo. Foram criados pela SONY em 1948 (HeadPhones) e em 1949 (EarPhones). Sua finalidade é proporcionar uma audição privada, minimizar a interferência de outros sons presentes no mesmo espaço, ou simplesmente constituir uma alternativa quando não se puder ouvir som por caixas acústicas.
+        </p>
+        <p>
+            Podem ser categorizados em headphones (apoiados na cabeça) e earphones (apoiados na orelha) e seus tipos principais são o circum-aural (que circunda a orelha), o supra-aural (colocado sobre a orelha), o auricular (colocado na concha do ouvido externo) e o intra-auricular (colocado no canal auditivo).
+            Num contexto de telecomunicação, um headset é uma combinação de auto-falantes e microfone.
+        </p>
+        <p>
+            Os fones podem estar ligados a uma fonte de sinal de áudio por fio, frequentemente através de um conector TRS de 3,5mm, ou sem fio via Bluetooth ou outra tecnologia de rádio.
+        </p>
+        <h2 id="tipos">Tipos</h2>
+        <dl>
+            <dt>Headphones</dt>
+            <dd>
+                Headphones vem do inglês "fones de cabeça", o que define bem sua forma, eles são dois alto-falantes geralmente com espumas ou outros materiais para isolar o barulho exterior e ainda sim, ser confortáveis. Eles tem uma alça que se encaixa na cabeça (de forma semelhante a uma tiara) e geralmente tem reguladores para encaixar de forma que os auto alto-falantes estejam alinhados aos ouvidos.
+            </dd>
+            <dt>Supra-aural</dt>
+            <dd>
+                Os fones supra-aurais ou on-ear (do inglês, "sobre a orelha") é um tipo de fone que têm apoios que assentam sobre a orelha, resultando num menor isolamento do som externo e podendo, em alguns, causar desconforto após uso prolongado.
+            </dd>
+            <dt>Earphone</dt>
+            <dd>
+                O termo earphone (do inglês, "fone de ouvido") refere-se a auto-falantes intra-auriculares, que são fones construídos para encaixarem-se na orelha e emitirem som diretamente no canal auditivo sem interação do som com o pavilhão da orelha. São pequenos e portáteis podendo ser com ou sem fio.
+            </dd>
+            Existem mais tipos de fones, porém estes são os principais.
+        </dl>
+        <div class="center">
+            <figure>
+                <img src="../midia/fones/fones.png" alt="HeadPhones"><br>
+                <i>HeadPhone Comum.</i>
+            </figure>
+            <figure>
+                <img src="../midia/fones/supra-aural.png" alt="Fone Supra-aural"><br>
+                <i>Fone supra-aural.</i>
+            </figure>
+            <figure>
+                <img src="../midia/fones/earphone.png" alt="Fone de Ouvido"><br>
+                <i>Earphone ou Fone de Ouvido</i>
+            </figure>
+        </div>
+        <h2 id="prec">Precauções</h2>
+        <p>
+            Os fones de ouvido são de grande ajuda, permitindo escutar músicas, vídeos, etc... em locais barulhentos ou na ausência de uma caixa de som, porém é igualmente perigoso para nossa audição.
+        </p>
+        <p>
+            É de grande importância que os usuários de fones não se exponham por mais de 30 minutos a um ruído de 100 dB. Hoje nos iPods, com seus earphones poderosos, chega-se até a 115 dB. Vale lembrar que a partir dos 80 dB, a cada 5 dB adicional, tira-se pela metade o tempo de exposição. Partindo-se de 16 horas com 80 dB, você pode calcular o quanto poderá ser prejudicial. A exposição constante ao ruído pode causar perda auditiva com surdez e tinido (zumbido nos ouvidos). Pessoas que escutam música alta por mais de uma hora podem ter perda progressiva da audição.
+        </p>
+    </section>
+    <section id="menu-lateral">
+        <div id="content">
+            <span class="center">Acesso rápido</span>
+            <ul id="links-id">
+                <a href="#intro"><li>Introdução</li></a>
+                <a href="#tipos"><li>Tipos</li></a>
+                <a href="#prec"><li>Precauções</li></a>
+            </ul>
+            <span class="center">Links úteis</span>
+            <ul id="links-ut">
+                <a href="caixa-de-som.html"><li>Caixas de Som</li></a>
+            </ul>
+        </div>
+    </section>
+    <script>
+        var menu = document.getElementById("menu-lateral")
+        onresize=function(){
+            var nVScroll = document.documentElement.scrollTop 
+            if(nVScroll > 250 && window.innerHeight<365){
+                menu.style.top="5px"
+                menu.style.bottom="auto"
+            }else if(nVScroll<250 && window.innerHeight<704){
+                menu.style.top=`213px`
+                menu.style.bottom="auto"
+            }else{
+                menu.style.top=`calc(${window.innerHeight}px /2 - ${menu.offsetHeight}px / 2)`
+                menu.style.bottom=`calc(${window.innerHeight}px /2 - ${menu.offsetHeight}px / 2)`
+            }
+        }
+        onscroll= function(){
+            var nVScroll = document.documentElement.scrollTop 
+            if(nVScroll > 250 && window.innerHeight<365){
+                menu.style.top="5px"
+                menu.style.bottom="auto"
+            }else if(nVScroll<250 && window.innerHeight<704){
+                menu.style.top=`calc(213px - ${nVScroll}px)`
+                menu.style.bottom="auto"
+            }else{
+                menu.style.top=`calc(${window.innerHeight}px /2 - ${menu.offsetHeight}px / 2)`
+                menu.style.bottom=`calc(${window.innerHeight}px /2 - ${menu.offsetHeight}px / 2)`
+            }
+        }
+    </script>
+</body>
+</html>

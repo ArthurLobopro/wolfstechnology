@@ -1,0 +1,24 @@
+.block{
+    width: 100%;
+    display: inline-block;
+}
+figure.center{
+    justify-content: center;
+    margin-top: 15px;
+}
+#main{
+    min-width: 625px;
+}
+.right{
+    float: right;
+}
+@media only screen and (max-width: 960px){
+    #menu-lateral{
+        right: 8px;
+    }
+}
+@media only screen and (max-width: 905px){
+    #menu-lateral{
+        display: none;
+    }
+}

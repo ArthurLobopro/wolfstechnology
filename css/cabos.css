@@ -1,0 +1,13 @@
+#main{
+    min-width: 675px;
+}
+@media only screen and (max-width: 994px){
+    #menu-lateral{
+        right: 8px;
+    }
+}
+@media only screen and (max-width: 914px){
+    #menu-lateral{
+        display: none;
+    }
+}

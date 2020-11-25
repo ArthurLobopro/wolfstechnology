@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/cabecalho.css">
+    <link rel="stylesheet" href="../css/main-artigos.css">
+    <link rel="stylesheet" href="../css/mouse.css">
+    <link rel="icon" href="../midia/mouse/mouse-icon.png">
+    <title>Mouse</title>
+</head>
+<body>
+    <header>
+        <a href="sobre.html"><img id="logo" src="../midia/gray-wolf-logo.png" title="Acerca de Wolf's Tecnology"></a>
+        <a href="../index.html"><img src="../midia/home_white.png" id="home" title="Home Page"></a>
+        <ul>
+            <li>Veja também:</li>
+            <li class="botao"><a href="historia.html">História dos computadores</a></li>
+            <li class="botao"><a href="sobre.html">Sobre</a></li>
+        </ul>
+    </header>
+    <section id="main">
+        <h1 id="intro">Mouse</h1>
+        <p>
+            O mouse é o dispositivo que torna possível a interface gráfica, ele controla um cursor (geralmente e formato de seta) que pode selecionar arquivos, botões, áreas, entre outros. Existem vários modelos de mouse, porém o mais comum tem o formato semelhante ao de um rato e por isso o nome em inglês "mouse".
+        </p>
+        <p>
+            O mouse foi inventado pela empresa Xerox mas só foi ser comerciaçizadp pela Apple, seu objetivo e atual função era facilitar a interação entre humano e máquina, uma vez que todos os computadores da época funcionavam por comandos o que tornava a simples tarefa como copiar um arquivo muito demorada.
+        </p>
+    <h2 id="evolução">Evolução do Mouse</h2>
+    <p>
+        Os primeiros mouses funcionavam por meio de discos que giravam nos eixos X e Y por meio de uma esfera que tocava diretamente a superfície em que era arrastado,assim girando os repectivos discos internos e indicando movimento, a detecção do movimento podia ser feita de forma magnética ou óptica.
+    </p>
+    <p>
+        Os modelos ópticos foram introduzidos no mercado pela Microsoft em 1999 não tendo peças móveis. De forma simplificada eles tiravam fotos e comparavam elas deduzindo assim o movimento feito, porém esse modelo requeria um mousepad específico com um padrão de imagem. Os mouses ópticos atuais são mais tecnológicos e funcionam e quase todas as superfícies não-reflexivas.
+    </p>
+    <p>
+        Atualmente os mouses por padrão os mouses vem com um botão esquerdo,usado para selecionar ou "clicar" (acionar) programas ou botões, um direito que aciona funções secundárias/avançadas e um scroll que serve movimentar a barra de rolagem de algumas janelas. Porém são comercializados mouses com botões laterais com mais funções como aumentar ou diminuir volume, entre outras.
+    </p>
+    <div class="center">
+        <figure>
+            <img src="../midia/mouse/mouse-comum.png" alt="Mouse Comum" title="Mouse Comum"><br>
+            <i>Mouse comum.</i>
+        </figure>
+        <figure>
+            <img src="../midia/mouse/mouse.png" alt="Mouse" title="Mouse" width="200px"><br>
+            <i>Mouse com duas funções a mais.</i>
+        </figure>
+        <figure>
+            <img src="../midia/mouse/mouse-gamer.png" alt="Mouse Gamer" title="Mouse Gemer" width="200px"><br>
+            <i>Mouse gamer com várias funções.</i>
+        </figure>
+    </div>
+    <h2 id="conect">Conexão</h2>
+    Os mouses eram conectados pelo cabo PS/2 (geralemente roxo para teclado e verde para mouse), porém este padrão apesar de ainda existir é considerado obsoleto e vem sido substituido pelos cabos USB que são padronizados e mais práticos. Há também mouses sem fio que se comunicam via um transmissor que geralemente também é USB.
+    <div class="center">
+        <figure>
+            <img src="../midia/cabo-mouse.png" alt="Cabo PS/2" title="Cabo PS/2"><br>
+            <i>Cabo PS/2 de mouse.</i>
+        </figure>
+        <figure>
+            <img src="../midia/cabos/cabo-usb.png" alt="Cabo USB" title="Cabo USB"><br>
+            <i>Cabo USB.</i>
+        </figure>
+        <figure>
+            <img src="../midia/mouse/mouse-sem-fio.png" alt="Mouse sem Fio" title="Mouse sem Fio"><br>
+            <i>Mouse sem Fio.</i>
+        </figure>
+    </div>
+    </section>
+    <section id="menu-lateral">
+        <div id="content">
+            <span class="center">Acesso rápido</span>
+            <ul id="links-id">
+                <a href="#intro"><li>Introdução</li></a>
+                <a href="#evolução"><li>Evolução do Mouse</li></a>
+                <a href="#conect"><li>Conexão</li></a>
+            </ul>
+            <span class="center">Links úteis</span>
+            <ul id="links-ut">
+                <a href="teclado.html"><li>Teclado</li></a>
+            </ul>
+        </div>
+    </section>
+    <script>
+        var menu = document.getElementById("menu-lateral")
+        onresize=function(){
+            var nVScroll = document.documentElement.scrollTop 
+            if(nVScroll > 250 && window.innerHeight<365){
+                menu.style.top="5px"
+                menu.style.bottom="auto"
+            }else if(nVScroll<250 && window.innerHeight<704){
+                menu.style.top=`213px`
+                menu.style.bottom="auto"
+            }else{
+                menu.style.top=`calc(${window.innerHeight}px /2 - ${menu.offsetHeight}px / 2)`
+                menu.style.bottom=`calc(${window.innerHeight}px /2 - ${menu.offsetHeight}px / 2)`
+            }
+        }
+        onscroll= function(){
+            var nVScroll = document.documentElement.scrollTop 
+            if(nVScroll > 250 && window.innerHeight<365){
+                menu.style.top="5px"
+                menu.style.bottom="auto"
+            }else if(nVScroll<250 && window.innerHeight<704){
+                menu.style.top=`calc(213px - ${nVScroll}px)`
+                menu.style.bottom="auto"
+            }else{
+                menu.style.top=`calc(${window.innerHeight}px /2 - ${menu.offsetHeight}px / 2)`
+                menu.style.bottom=`calc(${window.innerHeight}px /2 - ${menu.offsetHeight}px / 2)`
+            }
+        }
+    </script>
+</body>
+</html>

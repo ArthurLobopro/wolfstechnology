@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/cabecalho.css" type="text/css">
+    <link rel="stylesheet" href="../css/gabinete.css">
+    <title>Gabinete</title>
+</head>
+<body>
+    <header>
+        <a href="sobre.html"><img id="logo" src="../midia/gray-wolf-logo.png" title="Acerca de Wolf's Tecnology"></a>
+        <a href="../index.html"><img src="../midia/home_white.png" id="home" title="Home Page"></a>
+        <ul>
+            <li>Veja também:</li>
+            <li class="botao"><a href="historia.html">História dos computadores</a></li>
+            <li class="botao"><a href="sobre.html">Sobre</a></li>
+        </ul>
+    </header>
+    <section id="main">
+        <h1>Gabinetes</h1>
+        <p>Gabinetes servem para agrupar e proteger os componentes de hardware necessários para os computadores, se comparado ao ser humano o gabinete seria a pele e os ossos do corpo.</p><br>
+        <span class="mensagem">Clique em qual peça deseja obter informações</span>
+        <div>
+            <img src="../midia/hardware-interno.png" alt="Peças Gabinete" id="pecas" usemap="#link-pecas">
+        </div>
+        <map name="link-pecas">
+            <area shape="poly" coords="11, 40, 236, 2, 274, 131, 65, 164, 16, 118" href="pecas-gabinete/fonte.html" alt="Fonte" title="Fonte">
+            <!--Fontes-->
+            <area shape="rect" coords="56, 196, 240, 370" href="pecas-gabinete/placa-de-video.html" alt="Placa de Vídeo" title="Placa de Vídeo">
+            <!--Placa de Vídeo-->
+            <area shape="rect" coords="60, 385, 230, 545" href="pecas-gabinete/cooler.html" alt="Cooler" title="Cooler">
+            <!--Cooler-->
+            <area shape="rect" coords="260, 145, 510, 465" href="pecas-gabinete/placa-mae.html" alt="Placa Mãe" title="Placa Mãe">
+            <!--Placa Mãe-->
+            <area shape="poly" coords="514, 115, 675, 24, 709, 56, 542, 154" href="pecas-gabinete/memoria-ram.html" alt="Memória RAM" title="Memória RAM">
+            <!--Memória RAM-->
+            <area shape="ract" coords="540, 196, 733, 371" href="pecas-gabinete/hd.html" alt="HD" title="HD">
+            <!--HD-->
+            <area shape="rect" coords="550, 395, 735, 550" href="pecas-gabinete/processadores.html" alt="Processador" title="Processador">
+            <!--Processador-->
+        </map>
+    </section>
+    <section id="lista">
+        <div id="center">
+            <div class="invisivel" id="esquerdo">
+                <img src="" id="img-esquerda">
+            </div>
+            <table>
+                <tr>
+                    <td>Componentes da Imagem:</td>
+                    <td>Componentes da Imagem:</td>
+                </tr>
+                <tr>
+                    <td onmousemove="mostra_div(1, 1)" onmouseleave="esconde_div()"><a href="pecas-gabinete/fonte.html">Fonte</a></td>
+                    <td onmousemove="mostra_div(1, 2)" onmouseleave="esconde_div()"><a href="pecas-gabinete/hd.html">HD</a></td>
+                </tr>
+                <tr>
+                    <td onmousemove="mostra_div(2, 1)" onmouseleave="esconde_div()"><a href="pecas-gabinete/placa-de-video.html">Placa de vídeo</a></td>
+                    <td onmousemove="mostra_div(2, 2)" onmouseleave="esconde_div()"><a href="pecas-gabinete/processadores.html">Processador</a></td>
+                </tr>
+                <tr>
+                    <td onmousemove="mostra_div(3, 1)" onmouseleave="esconde_div()"><a href="pecas-gabinete/cooler.html">Cooler</a></td>
+                    <td>Outros Componentes:</td>
+                </tr>
+                <tr>
+                    <td onmousemove="mostra_div(4, 1)" onmouseleave="esconde_div()"><a href="pecas-gabinete/placa-mae.html">Placa Mãe</a></td>
+                    <td onmousemove="mostra_div(3, 2)" onmouseleave="esconde_div()"><a href="pecas-gabinete/cabos.html">Cabos</a></td>
+                </tr>
+                <tr>
+                    <td onmousemove="mostra_div(5, 1)" onmouseleave="esconde_div()"><a href="pecas-gabinete/memoria-ram.html">Memória RAM</a></td>
+                    <td onmousemove="mostra_div(4, 2)" onmouseleave="esconde_div()"><a href="pecas-gabinete/driver-cd.html">CD-ROM</a></td>
+                </tr>
+            </table>
+            <div class="invisivel" id="direito">
+                <img src="" id="img-direita">
+            </div>
+        </div>
+    </section>
+    <script src="../JavaScript/gabinete.js"></script>
+</body>
+</html>
