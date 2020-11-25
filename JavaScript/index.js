@@ -12,7 +12,7 @@ function mostra_div(num,lado){
                 direito.style.visibility="visible"
                 break
             case 2:
-                img_direita.src="midia/Monitores/monitor.png"
+                img_direita.src="midia/monitores/monitor.png"
                 img_direita.style.width="225px"
                 img_direita.style.height="169px"
                 direito.style.visibility="visible"
