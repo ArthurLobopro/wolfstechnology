@@ -95,7 +95,7 @@ dd{
 /*Fontes*/
 @font-face{
     font-family: 'PT Serif';
-    src: url(../Fontes/PTSerif-Regular.ttf);
+    src: url(../fonts/PTSerif-Regular.ttf);
     font-weight: 400;
     font-display: swap;
 }

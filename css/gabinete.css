@@ -50,7 +50,7 @@ td a{
 }
 @font-face{
     font-family: 'Lato';
-    src: url(../Fontes/Lato-Regular.ttf);
+    src: url(../fonts/Lato-Regular.ttf);
     font-weight: 400;
     font-display: swap;
 }

@@ -49,7 +49,7 @@ header li{
 }
 @font-face{
     font-family: 'Roboto Slab';
-    src: url(../Fontes/RobotoSlab-Medium.ttf);
+    src: url(../fonts/RobotoSlab-Medium.ttf);
     font-weight: 400;
     font-display: swap;
 }
